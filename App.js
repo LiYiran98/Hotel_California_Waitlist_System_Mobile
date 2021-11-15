@@ -56,18 +56,18 @@ const IssueComponent = graphql(dogQuery)(props => {
     );
   }
 
-  return <Text>The wait list is currently empty.</Text>;
+  return <Text style={styles.welcome}>The wait list is currently empty.</Text>;
 });
 
 export default class App extends Component {
   render() {
     return (
       <ApolloProvider client={client}>
-        <View style={styles.container}>
+        <ScrollView style={styles.container}>
             <Text style={styles.head}>Hotel California Waitlist System</Text>
             <Text style={styles.welcome}>Current Waitlist:</Text>
             <IssueComponent />
-        </View>
+        </ScrollView>
       </ApolloProvider>
     );
   }
