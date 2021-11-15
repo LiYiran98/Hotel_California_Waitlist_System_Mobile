@@ -23,6 +23,6 @@ const client = new ApolloClient({ uri: 'http://{your own ip address}:3000/graphq
 
 After that, run the project:
 ```
-npm run android
+npx react-native run-android
 ```
 You will be able to see the waitlist appear on your virtual android device.
