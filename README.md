@@ -16,7 +16,7 @@ After setting up the environment, back to the `Hotel_California_Waitlist_System_
 npm install
 ```
 
-Due to security reason, we cannot simply use `localhost` as the default hostname of ApolloClient. So before running the project, we need to replace the ip address in the file `App.js` line 29 with the ip address of your own computer. A new ApolloClient should looks like:
+Due to security reason, we cannot simply use `localhost` as the default hostname in the uri of ApolloClient. So before running the project, we need to replace the ip address in the file `App.js` line 29 with the ip address of your own computer. A new ApolloClient should looks like:
 ```
 const client = new ApolloClient({ uri: 'http://{your own ip address}:3000/graphql' });
 ```
